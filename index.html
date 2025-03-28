@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de Mones Boubahri</title>
+    <style>
+        /* Styles généraux */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Navigation */
+        header {
+            background: #1e5631;
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            text-align: center;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 15px;
+            transition: background 0.3s;
+        }
+
+        nav ul li a:hover {
+            background: #2e7d32;
+            border-radius: 5px;
+        }
+
+        /* Sections */
+        section {
+            padding: 100px 20px;
+            max-width: 900px;
+            margin: 80px auto;
+            background: white;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1, h2 {
+            color: #1e5631;
+            text-align: center;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        /* Compétences */
+        .competences {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .competence-item {
+            text-align: center;
+            margin: 20px;
+            width: 150px;
+            transition: transform 0.3s;
+        }
+
+        .competence-item:hover {
+            transform: scale(1.1);
+        }
+
+        .competence-item img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Carrousel */
+        .carrousel {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+        .carrousel-inner {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .carrousel-item {
+            min-width: 100%;
+            box-sizing: border-box;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Bouton Télécharger CV */
+        .cv-download {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .cv-download a {
+            background: #1e5631;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .cv-download a:hover {
+            background: #2e7d32;
+        }
+
+        /* Pied de page */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #1e5631;
+            color: white;
+            margin-top: 50px;
+        }
+        .veille-content img {
+    display: block; /* Permet à margin: auto de fonctionner */
+    margin: auto; /* Centre l'image horizontalement */
+    max-width: 100%; /* Empêche l'image de dépasser son conteneur */
+    height: auto; /* Conserve les proportions de l'image */
+}
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#presentation">Présentation</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#parcours-pro">Parcours Pro</a></li>
+                <li><a href="#parcours-scolaire">Parcours Scolaire</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#veille">Veille Techno</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section Présentation -->
+    <section id="presentation">
+        <h1>Présentation</h1>
+        <p>
+            Je m'appelle <strong>Mones Boubahri</strong>, j'ai <strong>20 ans</strong> et je suis actuellement en <strong>2ème année de BTS SIO (Services Informatiques aux Organisations) option SLAM (Solutions Logicielles et Applications Métiers)</strong> à l'école <strong>Insta</strong> située à Paris (75005). Passionné par le développement web, je me spécialise dans la création d'applications et de sites web dynamiques et performants.
+        </p>
+        <p>
+            Le <strong>BTS SIO option SLAM</strong> est une formation de niveau Bac+2 qui forme des professionnels capables de concevoir, développer, et maintenir des solutions logicielles adaptées aux besoins des entreprises. Cette formation couvre un large éventail de compétences, allant de la programmation à la gestion de bases de données, en passant par la cybersécurité et la gestion de projets.
+        </p>
+        <div class="cv-download">
+            <a href="CV Mones Boubahri Alternance.pdf" download="CV_Mones_Boubahri.pdf">Télécharger mon CV</a>
+        </div>
+    </section>
+
+    <!-- Section Compétences -->
+    <section id="competences">
+        <h1>Mes Compétences</h1>
+        <div class="competences">
+            <div class="competence-item">
+                <img src="html.jpg" alt="HTML">
+                <p>HTML</p>
+            </div>
+            <div class="competence-item">
+                <img src="css.png" alt="CSS">
+                <p>CSS</p>
+            </div>
+            <div class="competence-item">
+                <img src="javascript.jpg" alt="JavaScript">
+                <p>JavaScript</p>
+            </div>
+            <div class="competence-item">
+                <img src="php.png" alt="PHP">
+                <p>PHP</p>
+            </div>
+            <div class="competence-item">
+                <img src="mysql.png" alt="SQL">
+                <p>SQL</p>
+            </div>
+            <div class="competence-item">
+                <img src="python.png" alt="Python">
+                <p>Python</p>
+            </div>
+            <div class="competence-item">
+                <img src="csharp.png" alt="C#">
+                <p>C#</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Parcours Professionnel -->
+    <section id="parcours-pro">
+        <h1>Parcours Professionnel</h1>
+        <div class="carrousel">
+            <div class="carrousel-inner">
+                <div class="carrousel-item">
+                    <h3>Développeur Web - CHEYSSOI (06/12/2024 à 03/01/2025)</h3>
+                    <p>
+                        J'ai créé un site internet éco-responsable en m'occupant du Front-End, du Back-End et de la base de données. J'ai également collaboré avec différents domaines (architecte, commerce, Directeur Artistique).
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="carrousel">
+            <div class="carrousel-inner">
+                <div class="carrousel-item">
+                    <h3>Stage Développeur Web - Insta (22/05/2024 à 15/07/2024)</h3>
+                    <p>
+                        J'ai mis à jour le site internet en utilisant de nouveaux frameworks comme Angular et React.js. J'ai également géré la base de données et réglé les problèmes de sécurité du site web.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Parcours Scolaire -->
+    <section id="parcours-scolaire">
+        <h1>Parcours Scolaire</h1>
+        <div class="carrousel">
+            <div class="carrousel-inner">
+                <div class="carrousel-item">
+                    <h3>2025-2026 : BAC+3 Concepteur Développeur d’Applications - Insta, 75005</h3>
+                </div>
+            </div>
+        </div>
+        <div class="carrousel">
+            <div class="carrousel-inner">
+                <div class="carrousel-item">
+                    <h3>2023-2025 : BTS SIO option SLAM - Insta, 75005</h3>
+                </div>
+            </div>
+        </div>
+        <div class="carrousel">
+            <div class="carrousel-inner">
+                <div class="carrousel-item">
+                    <h3>2023 : Baccalauréat Général spécialisé Mathématiques et Sciences Économiques et Sociales - Lycée Germaine Tillion, Le Bourget</h3>
+                </div>
+            </div>
+        </div>
+        <div class="carrousel">
+            <div class="carrousel-inner">
+                <div class="carrousel-item">
+                    <h3>2020 : Brevet des Collèges - Collège Didier Daurat, Le Bourget</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Projets -->
+    <section id="projets">
+        <h1>Mes Projets</h1>
+        <div class="carrousel">
+            <div class="carrousel-inner">
+                <div class="carrousel-item">
+                    <h3>Programmation d’un site e-commerce (12/2023 - 06/2024)</h3>
+                    <p>
+                        J'ai créé un site internet e-commerce en concevant la programmation Backend et en développant une base de données.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="carrousel">
+            <div class="carrousel-inner">
+                <div class="carrousel-item">
+                    <h3>Projets Futurs</h3>
+                    <p>
+                        Je souhaite poursuivre mes études jusqu’en <strong>licence pro développeur web</strong>, puis jusqu’en <strong>master</strong> pour me spécialiser davantage dans le développement web. Mon objectif est de devenir un expert dans la création d'applications web performantes et innovantes.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="veille">
+        <h1>Veille Technologique : Les Frameworks JavaScript</h1>
+        <div class="veille-content">
+
+            <h2>1. Introduction aux Frameworks JavaScript</h2>
+            <p>Les frameworks JavaScript sont des outils indispensables pour les développeurs web modernes. 
+            Ils permettent de structurer les applications, de gagner du temps en développement et d'améliorer 
+            la performance des sites web. Contrairement aux bibliothèques classiques comme jQuery, les frameworks 
+            proposent une architecture complète pour concevoir des applications dynamiques et évolutives.</p>
+            <p><strong>Exemple :</strong> React.js est un framework très populaire permettant de créer des interfaces 
+            utilisateur interactives et performantes grâce à un système de composants réutilisables.</p>
+            <p><strong>Source :</strong> <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript">MDN Web Docs - JavaScript</a> (2023-03-10)</p>
+            <img src="JAVA.png" alt="Introduction aux frameworks JS"><br><br>
+
+            <h2>2. Les frameworks JS les plus populaires</h2>
+            <p>Les frameworks JavaScript ont chacun leurs spécificités et sont adaptés à différents besoins.</p>
+            <ul>
+                <li><strong>React.js :</strong> Développé par Facebook, il repose sur un Virtual DOM qui optimise le rendu des pages.</li>
+                <li><strong>Vue.js :</strong> Plus léger et flexible, il est souvent utilisé pour les projets de petite et moyenne taille.</li>
+                <li><strong>Angular :</strong> Soutenu par Google, il est recommandé pour les applications complexes et d'entreprise.</li>
+            </ul>
+            <p>Le choix d'un framework dépend de plusieurs critères : la complexité du projet, la taille de l'équipe, 
+            et les préférences du développeur.</p>
+            <p><strong>Source :</strong> <a href="https://reactjs.org/">Site officiel de React</a> (2024-01-15)</p>
+            <img src="RAV.jpg" alt="Comparaison des frameworks JS"> <br><br>
+
+            <h2>3. Les avantages des frameworks JavaScript</h2>
+            <p>Utiliser un framework JS présente plusieurs bénéfices :</p>
+            <ul>
+                <li><strong>Performance :</strong> Les frameworks optimisent le chargement des pages grâce au Virtual DOM et aux Single Page Applications (SPA).</li>
+                <li><strong>Composants réutilisables :</strong> Ils permettent de gagner du temps en réutilisant des morceaux de code.</li>
+                <li><strong>Écosystème :</strong> De nombreux outils et bibliothèques sont disponibles pour accélérer le développement.</li>
+            </ul>
+            <p>Par exemple, grâce à React et Vue.js, des entreprises comme Netflix, Facebook et Alibaba ont amélioré la rapidité et l'efficacité de leurs applications web.</p>
+            <p><strong>Source :</strong> <a href="https://vuejs.org/">Site officiel de Vue.js</a> (2024-02-01)</p>
+            <img src="feature.png" alt="Avantages des frameworks JS"><br><br>
+
+            <h2>4. Les défis et limites des frameworks JS</h2>
+            <p>Malgré leurs avantages, les frameworks JavaScript ont aussi des inconvénients :</p>
+            <ul>
+                <li><strong>Courbe d'apprentissage :</strong> Certains frameworks comme Angular sont complexes à maîtriser.</li>
+                <li><strong>Obsolescence rapide :</strong> Les technologies évoluent constamment, nécessitant des mises à jour fréquentes.</li>
+                <li><strong>Performance côté client :</strong> Un mauvais usage des frameworks peut ralentir l'affichage des pages web.</li>
+            </ul>
+            <p>Les entreprises doivent donc bien choisir leur framework en fonction de leurs besoins à long terme.</p>
+            <p><strong>Source :</strong> <a href="https://angular.io/">Site officiel d'Angular</a> (2024-03-10)</p>
+            <img src="JS.jpg" alt="Défis des frameworks JS">
+
+            <h2>5. Conclusion</h2>
+            <p>Les frameworks JavaScript sont devenus essentiels dans le développement web moderne. 
+            Ils permettent de créer des applications performantes, modulaires et évolutives. 
+            Cependant, le choix du bon framework dépend des besoins du projet, de la complexité de l'application et des compétences de l'équipe.</p>
+            <p>Se tenir informé des tendances et évolutions des frameworks est donc crucial pour les développeurs.</p>
+        </div>
+    </section>
+    <script>
+        // JavaScript pour le carrousel
+        let currentSlide = 0;
+
+        function showSlide(index) {
+            const carrousels = document.querySelectorAll('.carrousel-inner');
+            carrousels.forEach(carrousel => {
+                const slides = carrousel.children;
+                for (let i = 0; i < slides.length; i++) {
+                    slides[i].style.transform = `translateX(-${index * 100}%)`;
+                }
+            });
+        }
+
+        function nextSlide() {
+            const carrousels = document.querySelectorAll('.carrousel-inner');
+            carrousels.forEach(carrousel => {
+                const slides = carrousel.children;
+                currentSlide = (currentSlide + 1) % slides.length;
+                showSlide(currentSlide);
+            });
+        }
+
+        function prevSlide() {
+            const carrousels = document.querySelectorAll('.carrousel-inner');
+            carrousels.forEach(carrousel => {
+                const slides = carrousel.children;
+                currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+                showSlide(currentSlide);
+            });
+        }
+
+        // Animation des images de compétences
+        const competenceItems = document.querySelectorAll('.competence-item');
+        competenceItems.forEach(item => {
+            item.addEventListener('mouseover', () => {
+                item.style.transform = 'scale(1.1)';
+            });
+            item.addEventListener('mouseout', () => {
+                item.style.transform = 'scale(1)';
+            });
+        });
+    </script>
+    <footer>
+        <p>© 2025 - Mon Portfolio & Veille Tech</p>
+    </footer>
+
+</body>
+</html>
